@@ -1,0 +1,19 @@
+<html>
+
+<body>
+
+
+
+<script>
+	var a;
+	console.log('a= '+a);//undefined ......default value is undefined
+	console.log('b= '+b);//undefined ......var type variables hoist at the top of block.... but variable is initialized later only
+	var b=7;
+	console.log('c= '+c);//Uncaught ReferenceError: c is not defined at VariableHoisting.html:12
+	let x;
+	console.log('x= '+x);//undefined
+	console.log('y= '+y);//Uncaught ReferenceError: Cannot access 'y' before initialization at VariableHoisting.html:15
+	let y;
+</script>
+</body>
+</html>

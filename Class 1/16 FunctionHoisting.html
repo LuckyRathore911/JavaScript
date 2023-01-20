@@ -1,0 +1,20 @@
+<html>
+
+<body>
+
+<script>
+	xyz();  //calling of xyz()
+	function xyz(){    //definition of function //xyz() got hoisted that's why 
+	console.log('xyz function');
+	}
+	//var pqr; was hoisted... later it converted into a function
+	pqr(); //Uncaught TypeError: pqr is not a function
+	var pqr=function(){  //anonymous function....pqr is a reference for a function
+	console.log('pqr');
+	}
+	
+</script>
+
+</body>
+
+</html>

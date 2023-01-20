@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+	<h1>Hi</h1>
+	<button>toggle text</button> 
+	
+	<script>
+	var h1tag=document.querySelector('h1');
+	var btntag=document.querySelector('button');
+	
+	btntag.onclick=function()//self executable function
+	{ 
+		var content=h1tag.textContent;
+		if(content=='Hi'){
+			h1tag.textContent='Hello'
+		}
+		else{
+			h1tag.textContent='Hi'
+		}
+	}
+	</script>
+	
+</body>
+
+<html>

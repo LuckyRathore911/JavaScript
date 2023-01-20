@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<h1> </h1>
+
+<script>
+	var username=prompt("Enter you Name");
+	var h1tag=document.querySelector('h1');
+	function setUsername(username)
+	{
+		if(username==null ||username.length==0)
+			alert("Please enter your name");
+		else{
+			console.log(username.length);
+			h1tag.textContent=username;
+			}
+	}
+	setUsername(username);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<img src="00git.jpeg"> </img>
+
+<script>
+	let image=document.querySelector('img');
+	let page=document.querySelector('html');
+	
+	page.onclick=function(){
+		let mysrc=image.getAttribute('src'); //image name
+		if(mysrc==='00git.jpeg')
+			image.setAttribute('src','00nodejs.png');
+		else
+			image.setAttribute('src','00git.jpeg');
+	}
+</script>
+
+</body>
+</html>

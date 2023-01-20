@@ -1,0 +1,20 @@
+<html>
+
+<head>
+</head>
+
+<body>
+<script>
+	if(true){
+		var x=5;
+	}
+	console.log(x);//5.... x is out of scope
+	if(true){
+		let y=6;
+		console.log(y);
+	}
+	console.log(y);//Uncaught ReferenceError: y is not defined at VariableScope.html:15
+</script>
+</body>
+
+</html>
